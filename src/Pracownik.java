@@ -34,7 +34,7 @@ public class Pracownik {
 	}
 	
 	public void akcja3(){
-		System.out.println("akcja35");
+		System.out.println("akcja3");
 	}
 	
 }
