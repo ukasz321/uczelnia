@@ -6,6 +6,7 @@ public class Pracownik {
 	
 	public Pracownik() {}
 	
+	//gettery i settery (zabezpieczenie dostępu do zmiennych)
 	public String getImie() {
 		return imie;
 	}
@@ -25,6 +26,7 @@ public class Pracownik {
 		this.tytul_naukowy = tytul_naukowy;
 	}
 	
+	//działania na obiekcie
 	public void akcja1(){
 		System.out.println("akcja1");
 	}

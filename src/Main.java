@@ -6,6 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		//tworzenie obiektów klas Student, Wykładowca, Dziekan, Rektor
 		Student s1 = new Student("Student", "Student", 336123);
 		Pracownik w1 = new Wykladowca("Adam", "Wykladowca", "doktor");
 		Pracownik d1 = new Dziekan("Piotr", "Dziekan", "profesor nadzwyczajny");
@@ -22,6 +23,7 @@ public class Main {
 		
 	}
 	
+	//serjalizacja
 	static void serializujPracownika(Pracownik p) {
 		try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream((p.getClass().getCanonicalName() + "_obj.bin").toLowerCase()))) {
 		    outputStream.writeObject(p);

@@ -2,11 +2,13 @@ import java.io.Serializable;
 
 public class Student implements Serializable {
 	
+	//id potrzebne do serjalizacji
 	private static final long serialVersionUID = 1L;
 	private String imie;
 	private String nazwisko;
 	private int nr_indeksu;
 
+	//konstruktor
 	public Student(String imie, String nazwisko, int nr_indeksu) {
 		this.imie = imie;
 		this.nazwisko = nazwisko;
@@ -14,6 +16,7 @@ public class Student implements Serializable {
 		System.out.println("Konstruktor klasy student");
 	}
 
+	//gettery i settery (zabezpieczenie dostępu do zmiennych)
 	public String getImie() {
 		return imie;
 	}
@@ -38,8 +41,9 @@ public class Student implements Serializable {
 		this.nr_indeksu = nr_indeksu;
 	}
 	
+	//działania na obiekcie
 	public void idzNaZajecia(){
-		System.out.println(imie + " " + nazwisko + " " + "idzie na zajeia");
+		System.out.println(imie + " " + nazwisko + " " + "idzie na zajecia");
 	}
 	
 	public void uczSie(){
