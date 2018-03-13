@@ -2,6 +2,7 @@ import java.io.Serializable;
 
 public class Student implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
 	private String imie;
 	private String nazwisko;
 	private int nr_indeksu;
@@ -37,15 +38,15 @@ public class Student implements Serializable {
 		this.nr_indeksu = nr_indeksu;
 	}
 	
-	void idzNaZajecia(){
-		System.out.println(imie + " " + nazwisko + " " + "idzie na zajêcia");
+	public void idzNaZajecia(){
+		System.out.println(imie + " " + nazwisko + " " + "idzie na zajeia");
 	}
 	
-	void uczSie(){
-		System.out.println(imie + " " + nazwisko + " " + "uczy siê");
+	public void uczSie(){
+		System.out.println(imie + " " + nazwisko + " " + "uczy sie");
 	}
 	
-	void grajWLola(){
-		System.out.println(imie + " " + nazwisko + " " + "uczy siê");
+	public void grajWLola(){
+		System.out.println(imie + " " + nazwisko + " " + "gra w Lola");
 	}
 }

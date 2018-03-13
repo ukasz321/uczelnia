@@ -1,12 +1,10 @@
 public class Pracownik {
 	
-	private String imie;
-	private String nazwisko;
-	private String tytul_naukowy;
+	protected String imie;
+	protected String nazwisko;
+	protected String tytul_naukowy;
 	
-	public Pracownik() {
-		
-	}
+	public Pracownik() {}
 	
 	public String getImie() {
 		return imie;
@@ -27,16 +25,16 @@ public class Pracownik {
 		this.tytul_naukowy = tytul_naukowy;
 	}
 	
-	void akcja1(){
+	public void akcja1(){
 		System.out.println("akcja1");
 	}
 	
-	void akcja2(){
+	public void akcja2(){
 		System.out.println("akcja2");
 	}
 	
-	void akcja3(){
-		System.out.println("akcja3");
+	public void akcja3(){
+		System.out.println("akcja35");
 	}
 	
 }
