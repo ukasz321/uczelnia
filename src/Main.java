@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		//tworzenie obiektów klas Student, Wykładowca, Dziekan, Rektor
-		Student s1 = new Student("Student", "Student", 336123);
+		Student s1 = new Student("Kamil", "Student", 336123);
 		Pracownik w1 = new Wykladowca("Adam", "Wykladowca", "doktor");
 		Pracownik d1 = new Dziekan("Piotr", "Dziekan", "profesor nadzwyczajny");
 		Pracownik r1 = new Rektor("Marek", "Rektor", "profesor zwyczajny"); 
